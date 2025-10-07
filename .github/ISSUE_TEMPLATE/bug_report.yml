@@ -1,0 +1,62 @@
+name: 🐛 Reporte de error
+description: Crea un informe para ayudarnos a reproducir y corregir un error.
+title: "[BUG] Breve descripción del error"
+labels: ["bug", "pendiente"]
+assignees:
+  - 
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por informarnos de un posible error!  
+        Por favor, rellena la siguiente información para que podamos reproducirlo y solucionarlo.
+
+  - type: input
+    id: resumen
+    attributes:
+      label: 🧩 Descripción breve
+      description: Explica brevemente en qué consiste el error.
+      placeholder: Ejemplo: "El botón de guardar no funciona en la vista de perfil."
+    validations:
+      required: true
+
+  - type: textarea
+    id: pasos
+    attributes:
+      label: 🔁 Pasos para reproducirlo
+      description: Explica qué pasos debemos seguir para ver el error.
+      placeholder: |
+        1. Ir a '...'
+        2. Hacer clic en '...'
+        3. Ver el error '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: resultado_esperado
+    attributes:
+      label: ✅ Resultado esperado
+      description: Indica qué debería haber ocurrido en lugar del error.
+      placeholder: Ejemplo: "El sistema debería guardar los cambios correctamente."
+    validations:
+      required: true
+
+  - type: textarea
+    id: entorno
+    attributes:
+      label: 💻 Entorno
+      description: Detalla tu entorno de desarrollo o ejecución.
+      placeholder: |
+        - SO: Windows 11
+        - Navegador: Chrome 120.0
+        - Versión del proyecto: v1.2.3
+    validations:
+      required: false
+
+  - type: textarea
+    id: capturas
+    attributes:
+      label: 📸 Capturas o logs (opcional)
+      description: Añade imágenes o registros que ayuden a entender mejor el error.
+      placeholder: Puedes arrastrar y soltar archivos aquí.

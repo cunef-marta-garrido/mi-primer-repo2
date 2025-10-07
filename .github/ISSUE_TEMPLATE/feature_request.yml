@@ -1,0 +1,56 @@
+name: ✨ Solicitud de nueva funcionalidad
+description: Sugiere una nueva característica o mejora para el proyecto.
+title: "[FEATURE] Breve descripción de la propuesta"
+labels: ["enhancement", "pendiente"]
+assignees:
+  - 
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por tu interés en mejorar el proyecto!  
+        Por favor, completa la siguiente información para evaluar tu propuesta.
+
+  - type: input
+    id: resumen
+    attributes:
+      label: 💡 Descripción breve
+      description: Resume la funcionalidad que te gustaría añadir.
+      placeholder: Ejemplo: "Agregar autenticación con Google."
+    validations:
+      required: true
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: 🧩 Problema relacionado
+      description: Describe si esta solicitud está relacionada con algún problema actual.
+      placeholder: Ejemplo: "Actualmente, los usuarios deben crear una cuenta manualmente."
+    validations:
+      required: false
+
+  - type: textarea
+    id: solucion
+    attributes:
+      label: 🚀 Solución propuesta
+      description: Explica cómo te gustaría que se implementara la nueva función.
+      placeholder: Ejemplo: "Permitir inicio de sesión con cuentas de Google usando OAuth 2.0."
+    validations:
+      required: true
+
+  - type: textarea
+    id: beneficios
+    attributes:
+      label: 🌟 Beneficios
+      description: Indica qué mejoras o ventajas aportará esta nueva característica.
+      placeholder: Ejemplo: "Facilitará el registro de usuarios y mejorará la experiencia de uso."
+    validations:
+      required: true
+
+  - type: textarea
+    id: consideraciones
+    attributes:
+      label: ⚙️ Consideraciones adicionales (opcional)
+      description: Añade cualquier detalle técnico o referencia que pueda ser útil.
+      placeholder: Ejemplo: "Compatibilidad con la API actual o cambios necesarios en la base de datos."
